@@ -118,7 +118,7 @@ tidy_text %>%
   comparison.cloud(colors = c("#F8766D", "#00BFC4"),
                    max.words = 100)
 
-#performing topic-modeling on q_content:
+#performing topic-modeling on column 'q_content':
 library(RTextTools)
 library(tm)
 library(wordcloud)
