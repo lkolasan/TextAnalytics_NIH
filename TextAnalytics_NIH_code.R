@@ -26,7 +26,7 @@ tidy_text %>%
   xlab(NULL) +
   coord_flip()
 
-#Stemmng the orginal data
+#Stemming the orginal data
 library(SnowballC)
 tidy_text <- pcd %>% unnest_tokens(word, q_content) %>% mutate(word = wordStem(word)) 
 
